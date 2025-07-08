@@ -69,7 +69,7 @@ class Player:
         self.unlocked_ship = False
         self.monster_skills = defaultdict(int)
     def check_pet_hunger(self):
-        """检查所有活跃宠物饥饿状态，返回是否有宠物过于饥饿"""
+       
         hungry_pets = [pet for pet in self.active_pets if pet.hunger >= 10]
         for pet in hungry_pets:
             print(f"\n警告：{pet.name}({pet.type})非常饥饿！饥饿度: {pet.hunger}/10")
